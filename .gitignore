@@ -1,0 +1,4 @@
+# build目录
+build/
+# VScode 配置文件
+**/.vscode/

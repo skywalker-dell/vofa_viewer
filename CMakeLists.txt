@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10)
+project(demo)
+find_package(OpenCV REQUIRED)
+include_directories(./vofa_viewer/vofa_viewer.h)
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(demo main.cpp ./vofa_viewer/vofa_viewer.cpp)
+target_link_libraries(demo ${OpenCV_LIBS})
